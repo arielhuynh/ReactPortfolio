@@ -1,8 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
-
-const sendGrid = require('@sendGrid/mail');
+const PORT = process.env.PORT || 3000;
 
 
 const app = express();
@@ -20,40 +19,9 @@ app.use((req, res, next) => {
 });
 
 
-app.get('/api', (req, res, next) => {
-    res.send('API Status: I\'m awesome')
-});
+
+app.listen(PORT,()=>{
+    console.log("server is running on",PORT)
+})
 
 
-app.post('/api/email', (req, res, next) => {
-
-    console.log(req.body);
-
-    sendGrid.setApiKey('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');
-    const msg = {
-        to: 'garrettlove5346@gmail.com',
-        from: req.body.email,
-        subject: 'Website Contact',
-        text: req.body.message
-    }
-
-    sendGrid.send(msg)
-        .then(result => {
-
-            res.status(200).json({
-                success: true
-            });
-
-        })
-        .catch(err => {
-
-            console.log('error: ', err);
-            res.status(401).json({
-                success: false
-            });
-
-        });
-});
-
-
-app.listen(3030, '0.0.0.0');
