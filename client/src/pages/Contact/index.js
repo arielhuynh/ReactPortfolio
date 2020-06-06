@@ -10,7 +10,7 @@ function Contact(){
       <div className="container main-view">
         <div className="row">
           <div className="col s12 flow-text">
-            <h1>Contact</h1>
+            <h1>Let's Sip Some Tea ☕</h1>
             <img src = "assets/images/ariel.JPG" className ="headshot" alt="ariel"/>  
             <div className="contact-link">
             <img src= "assets/images/linkedin.png" alt="linkedin logo"></img>

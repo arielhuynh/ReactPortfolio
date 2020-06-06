@@ -27,7 +27,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "minify-css": "postcss node_modules/materialize-css/dist/css/materialize.css > node_modules/materialize-css/dist/css/materialize.min.css"
+    
   },
   "eslintConfig": {
     "extends": "react-app"

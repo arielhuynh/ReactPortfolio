@@ -7,7 +7,7 @@ function About(){
       <div className="container main-view">
         <div className="row">
           <div className="col s12">
-            <h1>About Me</h1>
+            <h1>Let's break the ice ⛏️ </h1>
             <img src = "/assets/images/ariel.JPG" className ="headshot" alt="ariel"/>  
             <p className="flow-text">
             <p>I currently work as a Team Lead, ESC for a medical device company called Spacelabs Healthcare.</p>
